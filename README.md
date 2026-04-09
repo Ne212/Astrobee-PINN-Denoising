@@ -53,10 +53,21 @@ Model training is based on the simultaneous optimization of three competing phys
 * **Early Stopping:** Training successfully converged at epoch 168 out of 400.
 
 ---
-
-## 🛠️ Installation & Usage
-
 ### Requirements
 To set up the environment, run:
-```bash
+bash
 pip install -r requirements.txt
+
+
+
+
+Directory Structure:
+Astrobee_PINN_Denoising/
+├── data/                  # Raw CSV files (See Data Download)
+├── weights/               # Pre-trained model (best_pidn.pt) & stats (stats.pkl)
+├── assets/                # Visual results and plots
+├── model.py               # PIDN Architecture
+├── kullanilacak_loss.py   # PINN Loss Functions
+├── train.py               # Main training script
+└── visualize_results.py   # Inference and SOTA plotting script
+
